@@ -23,22 +23,70 @@ import javax.swing.JTextField;
 
 public class Quiz implements ActionListener{
 
+	Anas anas =new Anas();
+	
 	String[] questions = 	{
-								"Which company created Java?",
-								"Which year was Java created?",
+			anas.afficheQuestion(1),
+    		anas.afficheQuestion(2),
+    		anas.afficheQuestion(3),
+    		anas.afficheQuestion(4),anas.afficheQuestion(5),anas.afficheQuestion(6),anas.afficheQuestion(7),
+    		anas.afficheQuestion(8),anas.afficheQuestion(9),anas.afficheQuestion(10),anas.afficheQuestion(11),
+    		anas.afficheQuestion(12),anas.afficheQuestion(13),anas.afficheQuestion(14),anas.afficheQuestion(15),
+    		anas.afficheQuestion(16),anas.afficheQuestion(17),anas.afficheQuestion(18),anas.afficheQuestion(19),
+    		anas.afficheQuestion(20),anas.afficheQuestion(21),anas.afficheQuestion(22),anas.afficheQuestion(23),
+    		anas.afficheQuestion(24),anas.afficheQuestion(25)
 								
 							};
 	String[][] options = 	{
-								{"Sun Microsystems","Starbucks","Microsoft","Alphabet"},
-								{"1989","1996","1972","1492"},
-								{"Apple","Latte","Oak","Koffing"},
-								{"Steve Jobs","Bill Gates","James Gosling","Mark Zuckerburg"}
+			 {anas.afficheReponse1(1),anas.afficheReponse2(1),anas.afficheReponse3(1),anas.afficheReponse4(1)},
+	            {anas.afficheReponse1(2),anas.afficheReponse2(2),anas.afficheReponse3(2),anas.afficheReponse4(2)},
+	            {anas.afficheReponse1(3),anas.afficheReponse2(3),anas.afficheReponse3(3),anas.afficheReponse4(3)},
+	            {anas.afficheReponse1(4),anas.afficheReponse2(4),anas.afficheReponse3(4),anas.afficheReponse4(4)},
+	            {anas.afficheReponse1(5),anas.afficheReponse2(5),anas.afficheReponse3(5),anas.afficheReponse4(5)},
+	            {anas.afficheReponse1(6),anas.afficheReponse2(6),anas.afficheReponse3(6),anas.afficheReponse4(6)},
+	            {anas.afficheReponse1(7),anas.afficheReponse2(7),anas.afficheReponse3(7),anas.afficheReponse4(7)},
+	            {anas.afficheReponse1(8),anas.afficheReponse2(8),anas.afficheReponse3(8),anas.afficheReponse4(8)},
+	            {anas.afficheReponse1(9),anas.afficheReponse2(9),anas.afficheReponse3(9),anas.afficheReponse4(9)},
+	            {anas.afficheReponse1(10),anas.afficheReponse2(10),anas.afficheReponse3(10),anas.afficheReponse4(10)},
+	            {anas.afficheReponse1(11),anas.afficheReponse2(11),anas.afficheReponse3(11),anas.afficheReponse4(11)},
+	            {anas.afficheReponse1(12),anas.afficheReponse2(12),anas.afficheReponse3(12),anas.afficheReponse4(12)},
+	            {anas.afficheReponse1(13),anas.afficheReponse2(13),anas.afficheReponse3(13),anas.afficheReponse4(13)},
+	            {anas.afficheReponse1(14),anas.afficheReponse2(14),anas.afficheReponse3(14),anas.afficheReponse4(14)},
+	            {anas.afficheReponse1(15),anas.afficheReponse2(15),anas.afficheReponse3(15),anas.afficheReponse4(15)},
+	            {anas.afficheReponse1(16),anas.afficheReponse2(16),anas.afficheReponse3(16),anas.afficheReponse4(16)},
+	            {anas.afficheReponse1(17),anas.afficheReponse2(17),anas.afficheReponse3(17),anas.afficheReponse4(17)},
+	            {anas.afficheReponse1(18),anas.afficheReponse2(18),anas.afficheReponse3(18),anas.afficheReponse4(18)},
+	            {anas.afficheReponse1(19),anas.afficheReponse2(19),anas.afficheReponse3(19),anas.afficheReponse4(19)},
+	            {anas.afficheReponse1(20),anas.afficheReponse2(20),anas.afficheReponse3(20),anas.afficheReponse4(20)},
+	            {anas.afficheReponse1(21),anas.afficheReponse2(21),anas.afficheReponse3(21),anas.afficheReponse4(21)},
+	            {anas.afficheReponse1(22),anas.afficheReponse2(22),anas.afficheReponse3(22),anas.afficheReponse4(22)},
+	            {anas.afficheReponse1(23),anas.afficheReponse2(23),anas.afficheReponse3(23),anas.afficheReponse4(23)},
+	            {anas.afficheReponse1(24),anas.afficheReponse2(24),anas.afficheReponse3(24),anas.afficheReponse4(24)},
+	            {anas.afficheReponse1(25),anas.afficheReponse2(25),anas.afficheReponse3(25),anas.afficheReponse4(25)}
 							};
 	char[] answers = 		{
-								'A',
-								'B',
-								'C',
-								'C'
+			'A',
+            'C',
+            'C',
+            'B',
+            'A',
+            'C',
+            'C',
+            'C',
+            'C',
+            'A',
+            'C',
+            'C',
+            'B',
+            'B',
+            'B',
+            'B',
+            'C',
+            'A',
+            'C',
+            'D',
+            'B',
+            'B'
 							};
 	char guess;
 	char answer;
