@@ -86,7 +86,10 @@ public class Quiz implements ActionListener{
             'C',
             'D',
             'B',
-            'B'
+            'B',
+            'C',
+            'A',
+            'A'
 							};
 	char guess;
 	char answer;
